@@ -1,0 +1,69 @@
+.main-container {
+	display: grid;
+	place-items: center;
+	background-color: white;
+}
+
+.content-container {
+	text-align: center;
+}
+
+.title {
+	font-weight: 700;
+	line-height: 1.2;
+	color: #6366f1;
+}
+
+@media (min-width: 640px) {
+	.title {
+		font-size: 3rem; /* 5xl */
+	}
+}
+
+.description {
+	font-size: 1rem;
+	line-height: 1.75;
+	color: #4b5563; /* Gray-600 */
+}
+
+.button-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 24px; /* Adjust as needed */
+}
+
+.back-home-button,
+.contact-support-button {
+	font-size: 0.875rem; /* Adjust as needed */
+	font-weight: 600;
+}
+
+.back-home-button {
+	border-radius: 4px;
+	background-color: #4f46e5; /* Indigo-600 */
+	padding: 10px 14px; /* Adjust as needed */
+	color: white;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+	transition: background-color 0.3s;
+	text-decoration: none;
+}
+
+.back-home-button:hover {
+	background-color: #4338ca; /* Indigo-500 */
+}
+
+.contact-support-button {
+	color: #1f2937; /* Gray-900 */
+}
+
+.contact-support-button span {
+	display: inline-block;
+	transition: transform 0.2s;
+}
+
+.contact-support-button:hover span {
+	transform: translateX(4px);
+}
+
+/* Focus-visible styles can be added as needed */
