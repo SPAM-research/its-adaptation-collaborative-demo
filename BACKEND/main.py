@@ -194,10 +194,6 @@ async def websocket_chat(websocket: WebSocket, username: str, problem_id: int, r
     try:
         await manager.connect(websocket)
         active_connections[username] = websocket
-        # group_id = Groups.is_in_group(username, redisson)
-        # if group_id is None:
-        #     await websocket.close()
-        #     return
 
         while True:
             _input = await websocket.receive_text()  # first message starts the session
