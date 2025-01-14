@@ -15,7 +15,7 @@ Before running the application, ensure that you have Docker installed on your sy
 ## How to Access the Application
 
 The demonstration can be accessed via the following URL:
-- **URL:** `example.com/hints/`
+- **URL:** `http://example.uv.es:3000/hints`
 
 To use the application:
 1. You can log in with any username. No registration or password is required.
@@ -37,8 +37,8 @@ To run the application locally, follow these steps:
    ```bash
    docker compose up -d --build
    ```
-
-This command will set up the necessary Docker containers and launch the application.
+    This command will set up the necessary Docker containers and launch the application.
+4. Navigate to `http://localhost:3000/hints` in your web browser(s) to access the application. Ensure that no other application is currently using port 3000 on your machine, as this may cause conflicts and prevent the demo from running.
 
 ## Conclusion
 
